@@ -44,8 +44,7 @@ def login_required(test):
 def flash_errors(form):
     for field, errors in form.errors.items():
         for error in errors:
-            flash(u"Error in the %s field - %s" % (
-                getattr(form, field).label.text, error), 'error')
+            flash(u"Error in the %s field - %s" % (getattr(form, field).label.text, error), 'error')
 
 
 def open_tasks():
@@ -85,8 +84,6 @@ def login():
                 return redirect(url_for('tasks'))
             else:
                 error = 'Invalid username or password.'
-        else:
-            error = 'Both fields are required.'
     return render_template('login.html', form=form, error=error)
 
 
