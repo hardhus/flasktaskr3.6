@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\cumon\Desktop\Yeni klasör\env"
+VIRTUAL_ENV="C:\Users\cumon\Desktop\flasktaskr3.6\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
