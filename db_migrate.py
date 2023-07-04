@@ -1,8 +1,8 @@
 # project/db_migrate.py
 
 
-from views import db
-from _config import DATABASE_PATH
+from project import db, bcrypt
+from project._config import DATABASE_PATH
 
 import sqlite3
 
@@ -29,3 +29,4 @@ with sqlite3.connect(DATABASE_PATH) as connection:
 
     # delete old_users table
     c.execute("DROP TABLE old_users")
+
